@@ -3,3 +3,7 @@ Include/
 Lib/
 Scripts/
 
+# env
+.env
+
+__pycache__
