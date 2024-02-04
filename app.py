@@ -8,15 +8,18 @@ from flask_cors import CORS
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask_restx import Api, Namespace
-# from swagger.auth import ns
+import os
 load_dotenv()
 import logging
 
 def create_app():
     app = Flask(__name__)
     # Configuration CORS options
-    origins = ["http://localhost:3000", "http://localhost:3000"]
-    CORS(app, origins=origins)
+    origins = ["http://localhist"]
+    allow_headers=["Content-Type", "Authorization"]
+    expose_headers=["Content-Type", "Authorization"]
+    methods=["GET", "POST", "DELETE"],
+    CORS(app, origins=origins, allow_headers=allow_headers, expose_headers=expose_headers, methods=methods)
 
     # Configure Flask logging
     app.logger.setLevel(logging.INFO)  # Set log level to INFO
@@ -47,13 +50,10 @@ def create_app():
         
     # initialization routes
     init_routes(ns, jwt, limiter)
+    
+    # Adding routes based on swagger
     api.add_namespace(ns)
 
-    # @app.route('/', methods=['GET', 'POST'])
-    # def greet():
-    #     app.logger.info('Getting / routes')
-    #     return jsonify({"message":"Welcome to my SWAGGERFLASK bakcend!"})
-    
     @app.errorhandler(500)
     def server_error(error):
         app.logger.exception('An exception occurred during a request.')
@@ -62,4 +62,4 @@ def create_app():
     return app
     
 if __name__ == '__main__':
-    create_app().run(debug=True)
+    create_app().run(host=os.environ.get('HOST'),port=os.environ.get('PORT'),debug=True)
