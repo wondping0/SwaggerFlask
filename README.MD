@@ -1,9 +1,9 @@
 # My Implementation Swagger and Flask-Python.
 
 - [Requirements](#Requirements)
-- [How_to_run](#How to run)
-- [Level_Question](#Level Question)
-- [Answering_Question](#Answering Question)
+- [How to run](#How to run)
+- [Level Question](#Level Question)
+- [Answering Question](#Answering Question)
 
 ## Requirements
 1. Python ( *Recommend version 3.12.1* )
