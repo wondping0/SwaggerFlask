@@ -109,6 +109,7 @@ note: terapkan saran-saran tersebut sebanyak-banyak untuk nilai lebih baik
             return f(*args, **kwargs)
         return _verify_access_token
     ```
+
     Kemudian untuk revoke akan tersimpan pada database MongoDB, berikut route yang digunakan
     ```python
     # /routes/auth.py line 88
@@ -134,9 +135,11 @@ note: terapkan saran-saran tersebut sebanyak-banyak untuk nilai lebih baik
                 app.logger.error(f"Error on {e}")
                 return {'server error':f"Error on {e}"}, 500
     ```
+
 5. Penggunaan Validasi Input/request
 
     Validator digunakan pada email dan password
+
     ```python
     # /middleware/validator.py
     ...
@@ -163,7 +166,9 @@ note: terapkan saran-saran tersebut sebanyak-banyak untuk nilai lebih baik
         """
         # source code function is_valid_email 
     ```
+
 6. Penerapan Data Transfer Objects / AutoMapper
+
     Penerapan DTO digunakan pada folder models yang membuat setiap data menjadi object.
     ```python
     # /models/__init__.py
@@ -171,7 +176,9 @@ note: terapkan saran-saran tersebut sebanyak-banyak untuk nilai lebih baik
     from models.token import Token
     from models.product import Product
     ```
+
 7. Penerapan Rate Limiting
+
     Rate limiting aplikasi menggunakan module **flask**
     ```python
     # /app.py line 38
