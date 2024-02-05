@@ -9,3 +9,68 @@ Password Validation Failed to: mufat
 Create user 65c0390bec92702670bbca3e
 Password Validation Failed to: mufat
 {'_id': ObjectId('65befc073ef3f3d6eb6262ef'), 'username': 'mufat', 'email': 'mufat@mail.com', 'password': 'scrypt:32768:8:1$QNZrjyihW19MYkJg$49edadecfea140eb61e3b698465bdb7dbe70a4588ab6275d9e54df089b27eeb1e18da03f698d834a53eaa28b8d7d1f76610ad87f0209d9ec8f55da6310af06b2', 'balances': 2321321312312321321, 'is_admin': True}is on login
+{'_id': ObjectId('65befc073ef3f3d6eb6262ef'), 'username': 'mufat', 'email': 'mufat@mail.com', 'password': 'scrypt:32768:8:1$QNZrjyihW19MYkJg$49edadecfea140eb61e3b698465bdb7dbe70a4588ab6275d9e54df089b27eeb1e18da03f698d834a53eaa28b8d7d1f76610ad87f0209d9ec8f55da6310af06b2', 'balances': 2321321312312321321, 'is_admin': True}is on login
+Getting access for current_user: {'user': {'id': '65befc073ef3f3d6eb6262ef', 'is_admin': True}}
+Error on '_id'
+Error on '_id'
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef successfully created product: 65c03f19ca11886c69528afb
+user 65befc073ef3f3d6eb6262ef get all products
+Error on Object of type ObjectId is not JSON serializable
+user 65befc073ef3f3d6eb6262ef get all products
+Error on Object of type ObjectId is not JSON serializable
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef get all products
+Error on too many values to unpack (expected 2)
+Error on too many values to unpack (expected 2)
+Error on too many values to unpack (expected 2)
+Error on too many values to unpack (expected 2)
+Error on too many values to unpack (expected 2)
+Error on too many values to unpack (expected 2)
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef failed buying item
+user 65befc073ef3f3d6eb6262ef failed buying item
+user 65befc073ef3f3d6eb6262ef failed buying item
+user 65befc073ef3f3d6eb6262ef failed buying item
+user 65befc073ef3f3d6eb6262ef failed buying item
+user 65befc073ef3f3d6eb6262ef success on buying item
+Error on Modifiers operate on fields but we found type array instead. For example: {$mod: {<field>: ...}} not {$set: [ { balance: 2.321321312312322e+18 }, { buyed_product_info: { product_id: "65c03f19ca11886c69528afb", purchase_date: new Date(1707124325304) } } ]}, full error: {'index': 0, 'code': 9, 'errmsg': 'Modifiers operate on fields but we found type array instead. For example: {$mod: {<field>: ...}} not {$set: [ { balance: 2.321321312312322e+18 }, { buyed_product_info: { product_id: "65c03f19ca11886c69528afb", purchase_date: new Date(1707124325304) } } ]}'}
+user 65befc073ef3f3d6eb6262ef success on buying item
+Error on 'buyed_product_info'
+user 65befc073ef3f3d6eb6262ef success on buying item
+{'_id': ObjectId('65befc073ef3f3d6eb6262ef'), 'username': 'mufat', 'email': 'mufat@mail.com', 'password': 'scrypt:32768:8:1$QNZrjyihW19MYkJg$49edadecfea140eb61e3b698465bdb7dbe70a4588ab6275d9e54df089b27eeb1e18da03f698d834a53eaa28b8d7d1f76610ad87f0209d9ec8f55da6310af06b2', 'balances': 2321321312312321321, 'is_admin': True, 'balance': 2.3213213123123215e+18, 'buyed_product_info': [{'product_id': '65c03f19ca11886c69528afb', 'purchase_date': datetime.datetime(2024, 2, 5, 9, 18, 40, 865000)}]}is on login
+Getting access for current_user: {'user': {'id': '65befc073ef3f3d6eb6262ef', 'is_admin': True}}
+{'fresh': False, 'iat': 1707099846, 'jti': '387136ea-4d84-43a9-9ee3-c1fb0445e640', 'type': 'access', 'sub': '{"id": "65befc073ef3f3d6eb6262ef", "is_admin": true}', 'nbf': 1707099846, 'csrf': '1abf7c4e-14bb-4b0c-8142-09ffc36cc6eb', 'exp': 1707186246}is on revoked
+Refresh token on identity: {"id": "65befc073ef3f3d6eb6262ef", "is_admin": true}
+Getting access for current_user: {'user': {'id': '65befc073ef3f3d6eb6262ef', 'is_admin': True}}
+Create user 65c0472fe3d83b47e78b52c4
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef success on buying item
+user 65befc073ef3f3d6eb6262ef failed buying item
+user 65befc073ef3f3d6eb6262ef get all products
+{'_id': ObjectId('65befc073ef3f3d6eb6262ef'), 'username': 'mufat', 'email': 'mufat@mail.com', 'password': 'scrypt:32768:8:1$QNZrjyihW19MYkJg$49edadecfea140eb61e3b698465bdb7dbe70a4588ab6275d9e54df089b27eeb1e18da03f698d834a53eaa28b8d7d1f76610ad87f0209d9ec8f55da6310af06b2', 'balances': 2321321312312321321, 'is_admin': True, 'balance': 2.3213213123123215e+18, 'buyed_product_info': [{'product_id': '65c03f19ca11886c69528afb', 'purchase_date': '2024-02-05 09:31:10.630515'}]}is on login
+user 65befc073ef3f3d6eb6262ef get purchased products
+user 65befc073ef3f3d6eb6262ef get purchased products
+Email Validation Failed to: wond1
+Password Validation Failed to: Password123
+Create user 65c04c366885e4614867263d
+{'_id': ObjectId('65c04c366885e4614867263d'), 'username': 'wond1', 'email': 'wond1@gmail.com', 'password': 'scrypt:32768:8:1$ZB4zqbOy2vOh9hL6$1ed66f980682aecdd95d4fbfdbae44104b94108756c39b6cacbbf04c991f443419bfeb27d2c3603445cfe89dc04fef07bee2c13462d491ab47829e73b2c0754b', 'balances': 1000, 'is_admin': False}is on login
+Getting access for current_user: {'user': {'id': '65c04c366885e4614867263d', 'is_admin': False}}
+Getting access for current_user: {'user': {'id': '65c04c366885e4614867263d', 'is_admin': False}}
+{'_id': ObjectId('65befc073ef3f3d6eb6262ef'), 'username': 'mufat', 'email': 'mufat@mail.com', 'password': 'scrypt:32768:8:1$QNZrjyihW19MYkJg$49edadecfea140eb61e3b698465bdb7dbe70a4588ab6275d9e54df089b27eeb1e18da03f698d834a53eaa28b8d7d1f76610ad87f0209d9ec8f55da6310af06b2', 'balances': 2321321312312321321, 'is_admin': True, 'balance': 2.3213213123123215e+18, 'buyed_product_info': [{'product_id': '65c03f19ca11886c69528afb', 'purchase_date': '2024-02-05 09:31:10.630515'}]}is on login
+Getting access for current_user: {'user': {'id': '65befc073ef3f3d6eb6262ef', 'is_admin': True}}
+{'fresh': False, 'iat': 1707101308, 'jti': 'f6032234-b386-41dd-ada3-ef3b651395cd', 'type': 'access', 'sub': '{"id": "65befc073ef3f3d6eb6262ef", "is_admin": true}', 'nbf': 1707101308, 'csrf': '35e2ec9f-27ae-437b-9e45-ba4590d0f5b9', 'exp': 1707187708}is on revoked
+Refresh token on identity: {"id": "65befc073ef3f3d6eb6262ef", "is_admin": true}
+Getting access for current_user: {'user': {'id': '65befc073ef3f3d6eb6262ef', 'is_admin': True}}
+user 65befc073ef3f3d6eb6262ef successfully created product: 65c04cef6885e4614867263f
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef success on buying item
+user 65befc073ef3f3d6eb6262ef get all products
+user 65befc073ef3f3d6eb6262ef get purchased products
