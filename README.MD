@@ -179,7 +179,7 @@ note: terapkan saran-saran tersebut sebanyak-banyak untuk nilai lebih baik
 
 7. Penerapan Rate Limiting
 
-    Rate limiting aplikasi menggunakan module **flask**
+    Rate limiting aplikasi menggunakan module **flask_limiter**
     ```python
     # /app.py line 38
     limiter = Limiter(
