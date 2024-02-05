@@ -1,0 +1,11 @@
+Error information 'email'
+Error information 'email'
+Error information 'email'
+Error on 'email'
+Error on 'email'
+Error on 'email'
+Email Validation Failed to: mufatgmail.com
+Password Validation Failed to: mufat
+Create user 65c0390bec92702670bbca3e
+Password Validation Failed to: mufat
+{'_id': ObjectId('65befc073ef3f3d6eb6262ef'), 'username': 'mufat', 'email': 'mufat@mail.com', 'password': 'scrypt:32768:8:1$QNZrjyihW19MYkJg$49edadecfea140eb61e3b698465bdb7dbe70a4588ab6275d9e54df089b27eeb1e18da03f698d834a53eaa28b8d7d1f76610ad87f0209d9ec8f55da6310af06b2', 'balances': 2321321312312321321, 'is_admin': True}is on login

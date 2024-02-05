@@ -14,7 +14,9 @@ class User:
         user_data = {
             'username': username,
             'email': email,
-            'password': hashed_password
+            'password': hashed_password,
+            'balances': 1000,
+            'is_admin': False,
         }
         user_id = users_collection.insert_one(user_data).inserted_id
         return str(user_id)

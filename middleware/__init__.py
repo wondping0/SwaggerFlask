@@ -1,1 +1,2 @@
-from middleware.token import create_tokens
+from middleware.token import create_tokens, verify_access_token
+from middleware.validator import is_valid_email, is_strong_password

@@ -20,7 +20,7 @@ def create_app():
     expose_headers=["Content-Type", "Authorization"]
     methods=["GET", "POST", "DELETE"],
     CORS(app, origins=origins, allow_headers=allow_headers, expose_headers=expose_headers, methods=methods)
-
+    
     # Configure Flask logging
     app.logger.setLevel(logging.INFO)  # Set log level to INFO
     handler = logging.FileHandler('app.log')  # Log to a file
@@ -39,20 +39,19 @@ def create_app():
     limiter = Limiter(
         get_remote_address,
         app=app,
-        default_limits=["2 per minute", "1 per second"],
+        default_limits=["200 per minute", "1 per second"],
     )
 
     api = Api(app, version='1.0', title='Todo SwaggerFlask API',
         description='A simple Todo SwaggerFlask API',
     )
-
-    ns = Namespace("auth")
         
     # initialization routes
-    init_routes(ns, jwt, limiter)
-    
-    # Adding routes based on swagger
-    api.add_namespace(ns)
+    init_routes(api, jwt, limiter)
+
+    @app.route("/dash",methods=["GET"])
+    def plugin():
+        return {},200
 
     @app.errorhandler(500)
     def server_error(error):
